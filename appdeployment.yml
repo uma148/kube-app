@@ -19,7 +19,7 @@ spec:
       - name: vprofileapp
         image: vprofile/vprofileapp:V1
         ports:
-        - name: vprofileapp-port
+        - name: vproapp-port
           containerPort: 8080
       initContainers:
       - name: init-mydb
