@@ -22,10 +22,10 @@ spec:
         - name: vpromq01-port
           containerPort: 15672
         env:
-        - name: RABBITMQ_DEFAULT_PASS_FILE
+        - name: RABBITMQ_DEFAULT_PASS
           valueFrom:
             secretKeyRef:
               name: app-secret
               key: rmq-pass
-        - name: RABBITMQ_DEFAULT_USER_FILE
+        - name: RABBITMQ_DEFAULT_USER
           value: "guest"
